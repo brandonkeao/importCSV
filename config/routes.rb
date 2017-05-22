@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     collection { post :import_csv }
   end
   
-root to: "users#index"
+  root to: "results#index"
 
   #get 'results/index'
   #get 'results/accept_csv'
