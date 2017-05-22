@@ -1,24 +1,9 @@
-# README
+# RRDS POC - Alpha version 0.1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Goals of this quick and dirty POC:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Mechanism for CSV data file import (performant)
+* Determine if custom JSOM API is needed for scaleability and performance
+* Identification of necessary indexing and db relations
+* Basic Javascript experimentations and interactions
+* Push to Heroku to test mock deployment
