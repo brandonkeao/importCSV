@@ -1,9 +1,13 @@
 class Result < ApplicationRecord
 	require 'csv'
-
+	
 	def self.load_csv(file)
+		#binding.pry
+		results = []
 		CSV.foreach(file.path, headers:true) do |row|
-			Result.create! row.to_hash
+			results << Result.new(row.to_h)
+			#Result.create! row.to_hash
 		end
+		Result.import(results)
 	end
 end
