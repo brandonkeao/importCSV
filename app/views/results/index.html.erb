@@ -1,2 +1,10 @@
-<h1>Results#index</h1>
-<p>Find me in app/views/results/index.html.erb</p>
+<h1>Results CSV Data Import</h1>
+
+<%= flash[:notice] %>
+
+<h4>Import that Data!</h4>
+
+<%= form_tag accept_csv_results_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import CSV" %>
+<% end %>

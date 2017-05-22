@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :results do
-    collection { post :import_csv }
+    collection { post :accept_csv }
   end
   
   root to: "results#index"
