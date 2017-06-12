@@ -8,3 +8,33 @@
   <%= file_field_tag :file %>
   <%= submit_tag "Import CSV" %>
 <% end %>
+
+<h2>Results Table Data</h2>
+<table>
+	<tr>
+		<th>CSV ID</th>
+		<th>Location</th>
+		<th>Place</th>
+		<th>Boat</th>
+		<th>Points</th>
+		<th>Race</th>
+		<th>Race Results ID</th>
+		<th>Race ID</th>
+		<th>Created At</th>
+		<th>Updated At</th>
+	</tr>
+<% @results.each do |result| %>
+	<tr>
+		<th><%= result.csv_id %></th>
+		<th><%= result.location %></th>
+		<th><%= result.place %></th>
+		<th><%= result.boat %></th>
+		<th><%= result.points %></th>
+		<th><%= result.race %></th>
+		<th><%= result.race_results_id %></th>
+		<th><%= result.race_id %></th>
+		<th><%= result.created_at %></th>
+		<th><%= result.updated_at %></th>
+	</tr>
+<% end %>
+</table>
