@@ -9,6 +9,14 @@
   <%= submit_tag "Import CSV" %>
 <% end %>
 
+<h4>Get Data as CSV</h4>
+
+<%= form_tag csv_export_results_path, multipart: true do %>
+  <%= submit_tag "Download CSV" %>
+<% end %>
+
+<!-- <a href= <%= csv_export_results_path %> ><button class="btn btn-success">Export All</button></a> -->
+
 <h2>Results Table Data</h2>
 <table>
 	<tr>
